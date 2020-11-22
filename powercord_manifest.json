@@ -1,0 +1,9 @@
+{
+    "name": "camel",
+    "description": "a simple 'matrix' theme for discord",
+    "version": "1.0.0",
+    "author": "audioz#6001",
+    "theme": "theme.css",
+	"consent": "false",
+    "license": "MIT"
+}
