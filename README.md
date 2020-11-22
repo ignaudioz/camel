@@ -2,7 +2,7 @@
 a simple theme that was made for discord that's nice on your eyes.
 it's somewhat based on the midnight powercord theme with a few tweaks and color changes -_-.
 
-**I pretty much "yoinked" all the theme as midnight's author says in his code, but it helped me alot with discord themes in general so yeah thanks spinfish**
+**I pretty much "yoinked" all the theme as midnight's author says in his code, but it helped me alot with discord theme in general so yeah thanks spinfish plus added some stuff**
 
 ## installation
 
