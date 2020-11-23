@@ -1,7 +1,20 @@
+/**
+ * @name camel matrix
+ * @author audioz
+ * @version ersion auto updates
+ * @description nibba boi
+ * @source https://github.com/ignAudioz/camel
+ * @website https://ignaudioz.io
+ * @authorLink https://github.com/ignAudioz
+ * @donate no need lool
+ * @invite camel
+*/
+
 /* imports */
 @import url("https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css");
 
 
+/* camel */
 
 /* variables and shit */
 :root {
@@ -12,22 +25,22 @@
   --text-link: #81D8D0;
 
   /* colour of right hand side of screen and chat */
-  --background-primary: #080808 !important;
+  --background-primary: #0d0d0d !important;
 
   /* embed backround/text channel list/member list colour */
-  --background-secondary: #0a0909 !important;
+  --background-secondary: #0a0a0a !important;
 
   /* colour of change status/mute mic/deafen/user settings patch */
-  --background-secondary-alt: #080808 !important;
+  --background-secondary-alt: #0a0a0a !important;
 
   /* colour of panel when you click on server name/edit message */
   --background-floating: #0c0e13 !important;
 
   /* colour of border around [top of] discord */
-  --background-tertiary: #080808 !important;
+  --background-tertiary: #030303 !important;
 
   /* colour of text box that you type in */
-  --channeltextarea-background: #0f0e0e !important;
+  --channeltextarea-background: #080808 !important;
 
   /* colours of things when you hover over them; e.g. a channel/user */
   --background-modifier-hover: rgba(255, 255, 255, 0.01) !important;
@@ -49,7 +62,7 @@
   /* colour for the following things:
      - channel icon, text with "Today at ..." by message
      - "Message #channel/user" */
-  --text-muted: #b6b6b6 !important;
+  --text-muted: #fff !important;
 
   /* colour of text in messages and discord logo in top
   left hand corner */
@@ -521,3 +534,86 @@ amazing LuckFire#4800! */
   .videoControls-24w7Xp > .topControls-KKImPZ > div > .headerWrapper-3NUKsd > .transparent-2ZlE3R  {
     box-shadow: none !important;
   }
+  
+  /** Alternative highlight for currently selected channel **/
+  .modeSelected-1zApJ_ .children-Bmpf2Q {
+    background-color: #7289da;
+    height: 30px;
+    padding-left: 6px;
+    padding-right: 8px;
+    margin-right: -8px;
+    border-radius: 16px 4px 4px 0px;
+  }
+  .modeSelected-1zApJ_ .content-3at_AU{
+    border-bottom: #7289da 2px solid;
+  }
+  
+/* Cool Member List from thanks Chromus#4761 !!*/
+:root {
+    --hover-animation-speed: 0.35s;
+    --seperator-color: var(--background-accent);
+ }
+ 
+ .membersWrap-2h-GB4 {
+    min-width: unset;
+    width: 65px;
+    justify-content: right;
+ }
+ 
+ .members-1998pB {
+    transition: transform var(--hover-animation-speed);
+ }
+ 
+ .membersWrap-2h-GB4:hover .members-1998pB {
+    transform: translateX(-190px);
+ }
+ 
+ .membersWrap-2h-GB4 .membersGroup-v9BXpm::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    border-radius: 50px;
+    background: unset;
+    background-color: var(--seperator-color);
+    position: absolute;
+    left: -36px;
+    top: 29px;
+    margin-left: 0px;
+ }
+ 
+ .membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
+    background-color: unset;
+    margin-left: 0px;
+    transition: margin-left var(--hover-animation-speed);
+ }
+ 
+ .membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
+    margin-left: 8px;
+ }
+ 
+ .membersWrap-2h-GB4:hover .membersGroup-v9BXpm {
+    transform: translateX(-6px);
+ }
+ 
+ .membersWrap-2h-GB4 .membersGroup-v9BXpm {
+    cursor: default;
+    transform: translateX(45px);
+    transition: transform var(--hover-animation-speed);
+    overflow: visible;
+ }
+.members-1998pB {
+  border-radius: 15px 15px 0 0 !important;
+}
+.membersWrap-2h-GB4, .members-1998pB {
+  left: 15px;
+  margin-right: 10px
+}
+.chat-3bRxxu {
+  background: var(--background-tertiary);
+}
+.chatContent-a9vAAp {
+  background-color: var(--background-primary);
+  border-radius: 0 15px 0 0 !important;
+  left: 25px;
+  margin-left: -25px
+}
