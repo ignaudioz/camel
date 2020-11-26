@@ -34,7 +34,7 @@
   --background-secondary-alt: #0a0a0a !important;
 
   /* colour of panel when you click on server name/edit message */
-  --background-floating: #0c0e13 !important;
+  --background-floating: #0a0a0a !important;
 
   /* colour of border around [top of] discord */
   --background-tertiary: #030303 !important;
@@ -51,7 +51,7 @@
   --channels-default: #9f9f9f !important;
 
   /* colour of message when hovering over it */
-  --message-hover: #030303 !important;
+  --message-hover: #171717 !important;
 
   /* colour of search bar */
   --search-menu-colour: #080808 !important;
@@ -73,7 +73,7 @@
      - mute mic/deafen/user settings
      - mentions inbox
      - text names of settings */
-  --interactive-normal: #c8c8c8 !important;
+  --interactive-normal: #fff !important;
 
   /* colour of text/button in interactive buttons (and text channel
   names) when hovered over */
@@ -93,7 +93,7 @@
        via member list
      - the colour of someone's username (if they don't have a nickname)
        when accessed via member list */
-  --header-secondary: #c9c9c9 !important;
+  --header-secondary: #fff !important;
 
 
   /* i dont know what any of the following does but i suppose
@@ -192,11 +192,11 @@ and on profile) */
 
 /* Discord icon colour in top left hand corner */
 .homeIcon-tEMBK1 {
-  color: #7CFC00;
+  color: #7FFF00;
 }
 
 .childWrapper-anI2G9{
-	color: #7CFC00;
+	color: #000000;
 }
 
 
@@ -617,3 +617,119 @@ amazing LuckFire#4800! */
   left: 25px;
   margin-left: -25px
 }
+
+
+/*Modern Embed thx rob#1160*/
+.embedFull-2tM8-- {
+  background: rgba(0,0,0, 0.2);
+  border-left: 0px;
+  border-bottom: 10px solid;
+  border-radius: 10px;
+  box-shadow: var(--elevationHigh);
+}
+.embedFull-2tM8-- .grid-1nZz7S {
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+
+
+
+/*Better voice design thx snapperito*/
+.ping-2NgC8E {
+    transform: scale(1.7);
+    margin-left: 5px;
+    margin-top: 11px;
+    margin-bottom: 0;
+    height: 20px;
+}
+.channel-1TmDQ6 {
+    margin-left: 30px;
+    margin-top: -9px;
+}
+.rtcConnectionStatusConnected-VRZDjy {
+    margin-left: 5px;
+}
+
+
+
+
+
+/** Chat box thx "hot tutorial" */
+.form-2fGMdU {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.channelTextArea-rNsIhG, .popout_7205, .form-2fGMdU  {
+  background: rgba(0,0,0, 0);
+  margin-bottom: 5px;
+}
+.typing-2GQL18, .base-gE7OpD {
+  margin-bottom: 5px;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(9px);
+  border-radius: 50px;
+  position: relative;
+  margin-right: 35px;
+}
+.scrollerSpacer-avRLaA {
+  height: 15px
+}
+.cooldownWrapper-3joyFc {
+  margin-right: 5px;
+}
+
+
+/*Call dock  thx DanKGooGLy#0001 */
+.wrapper-3EGhDO {
+    background-color: var(--background-secondary);
+    border-radius: 25px;
+    padding: 0px;
+}
+.colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.white-3GPOIp .centerIcon-2G6o-T {
+    color: currentColor;
+}
+.colorable-1bkp8v.primary-3NQg8g,
+.colorable-1bkp8v.primary-3NQg8g.active-1QRrIS, .colorable-1bkp8v.primary-3NQg8g:hover, 
+.colorable-1bkp8v.white-3GPOIp,
+.centerButton-3CaNcJ,
+.colorable-1bkp8v.white-3GPOIp.active-1QRrIS, .colorable-1bkp8v.white-3GPOIp:hover,
+.colorable-1bkp8v.red-33-Lnk {
+    background: none !important;
+}
+
+
+
+/*topbar*/
+[class*=bg] {
+  --col-grad-one: rgba(12,12,12,0.5);
+  
+  --col-grad-two: rgba(15,15,15,0.5);
+  
+  --col-grad-three: rgba(18,18,18,0.5);
+  
+  --col-grad-deg: 100deg;
+  
+  background: linear-gradient(var(--col-grad-deg), var(--col-grad-one) 0%, var(--col-grad-two) 58%, var(--col-grad-three) 100%); 
+}
+
+
+
+
+
+/* Dropdown Menu thx Leeprky you are mad sexy aint gonna lie*/
+div[id="message-actions"] {
+  min-width: 0px;
+  width: 57px;
+  transition: 1s;
+}
+div[id="message-actions"]:hover {
+  min-width: 0px;
+  width: 200px;
+  transition: 0.5s;
+}
+
+
+
+
+/* settings icon Mulv*/
+
