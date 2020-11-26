@@ -9,7 +9,7 @@ it's somewhat based on the midnight powercord theme with a few tweaks and color 
 open cmd cd to your powercord's theme folder and enter:
 
 ```shell
-git clone https://github.com/ignAudioz/camel/
+git clone https://github.com/ignAudioz/camel
 ```
 
 ## license
