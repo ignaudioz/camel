@@ -59,6 +59,14 @@ to opaque */
   border-radius: 50px;
   margin-top: 5px;
 }
+/*fixed "Try slash commands!" popup position and changed to opaque*/
+.base-3bcbY3 {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 45px;
+  margin-right: 25px;
+  position: relative;
+}
 
 /*Replaces Discord logo on top with the Camel one*/
 .wordmarkWindows-2dq6rw svg {
