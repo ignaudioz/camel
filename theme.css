@@ -21,7 +21,7 @@
     --background-tertiary: #0c0c0c !important;
     --background-accent: #242424 !important;
     --background-floating: #0c0c0c !important; 
-	--font: 'Whitney' !important;
+	  --font: 'Whitney' !important;
     --background-modifier-hover: rgba(255,255,255,0.01) !important;
     --background-modifier-active: rgba(255,255,255,0.03) !important;
     --background-modifier-selected: rgba(255,255,255,0.04) !important;
@@ -51,11 +51,20 @@
     --settings-logout: #f04747;
 }
 
-.wordmark-2iDDfm svg {
-    width: 0px;
+/* Changes the base color for all (jump to, go back to present etc..) bars 
+to opaque */
+.barBase-3xxDXu {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  margin-top: 5px;
 }
 
-.wordmark-2iDDfm:after {
+/*Replaces Discord logo on top with the Camel one*/
+.wordmarkWindows-2dq6rw svg {
+    width: 0px;
+}
+.wordmark-2u86JB:after {
     font-family: "Discord";
     content: "camel";
     font-size: 15px;
@@ -81,7 +90,7 @@ div[id="message-actions"]:hover {
 }
 
 
-/*topbar*/
+/* Topbar */
 [class*=bg] {
   --col-grad-one: rgba(12,12,12,0.5);
   
@@ -95,37 +104,32 @@ div[id="message-actions"]:hover {
 }
 
 
-
-/*Call dock  thx DanKGooGLy#0001 */
-.wrapper-3EGhDO {
+/* Call dock  */
+.wrapper-3Hk9OB {
     background-color: var(--background-secondary);
-    border-radius: 25px;
     padding: 0px;
 }
-.colorable-1bkp8v.white-3GPOIp, .colorable-1bkp8v.white-3GPOIp .centerIcon-2G6o-T {
-    color: currentColor;
-}
-.colorable-1bkp8v.primary-3NQg8g,
-.colorable-1bkp8v.primary-3NQg8g.active-1QRrIS, .colorable-1bkp8v.primary-3NQg8g:hover, 
-.colorable-1bkp8v.white-3GPOIp,
-.centerButton-3CaNcJ,
-.colorable-1bkp8v.white-3GPOIp.active-1QRrIS, .colorable-1bkp8v.white-3GPOIp:hover,
-.colorable-1bkp8v.red-33-Lnk {
-    background: none !important;
+
+/* User dock*/
+.container-YkUktl{
+    background-color: var(--background-secondary);
+    margin-bottom: 0px;
 }
 
 
-
-/** Chat box thx "hot tutorial" */
-.form-2fGMdU {
+/*Chat box*/
+.form-3gdLxP {
   display: flex;
   flex-direction: column-reverse;
-}
-.channelTextArea-rNsIhG, .popout_7205, .form-2fGMdU  {
   background: rgba(0,0,0, 0);
   margin-bottom: 5px;
 }
-.typing-2GQL18, .base-gE7OpD {
+.channelTextArea-1FufC0, .channelTextArea-1VQBuV {
+  background: rgba(0,0,0, 0);
+  margin-bottom: 5px;
+}
+/*Better is typing*/
+.typing-2J1mQU {
   margin-bottom: 5px;
   background-color: rgba(0,0,0,0.4);
   backdrop-filter: blur(9px);
@@ -133,65 +137,21 @@ div[id="message-actions"]:hover {
   position: relative;
   margin-right: 35px;
 }
-.scrollerSpacer-avRLaA {
-  height: 15px
-}
-.cooldownWrapper-3joyFc {
-  margin-right: 5px;
-}
-
-/**Better jump to present bar by MrTime*/
-.jumpToPresentBar-G1R9s6 {
-  background-color: rgba(0,0,0,0.2);
-  backdrop-filter: blur(5px);
-}
 
 
-/** Better New Massages Bar by Chromus*/
-.newMessagesBar-265mhP {
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-  border-radius: 50px;
-  margin-top: 5px;
-}
-
-/*Better voice design thx snapperito*/
-.ping-2NgC8E {
-    transform: scale(1.7);
-    margin-left: 5px;
-    margin-top: 11px;
-    margin-bottom: 0;
-    height: 20px;
-}
-.channel-1TmDQ6 {
-    margin-left: 30px;
-    margin-top: -9px;
-}
-.rtcConnectionStatusConnected-VRZDjy {
-    margin-left: 10px;
-}
-
-
-
-
-/*Modern Embed thx rob#1160*/
-.embedFull-2tM8-- {
+/* Embed color line in the bottom*/
+.embedFull-1HGV2S {
   background: rgba(0,0,0, 0.4);
   border-left: 0px;
   border-bottom: 3px solid;
   border-radius: 10px;
   box-shadow: var(--elevationHigh);
 }
-.embedFull-2tM8-- .grid-1nZz7S {
+.embedFull-1HGV2S .grid-1nZz7S {
   padding-top: 3px;
   padding-bottom: 10px;
 }
 
-
-/* Hide the help button on the upper right */
-.iconWrapper-2OrFZ1[aria-label=Help] {
-  display: none;
-}
 
 /* Bot tags */
   /* colour of the tag (backround and text) */
@@ -201,39 +161,22 @@ div[id="message-actions"]:hover {
 	font-size:12px;
     color: #fff;
 }
-
-  /* not too sure what this does but without it, the colour
-  is just a box inside the tag rather than the whole tag being
-  the same colour */
-.botTagRegular-2HEhHi span, .botTagInvert-18-95s span {
+/*Hides the "bot" content from the tag*/
+.botTagRegular-kpctgU span, .botTagInvert-18-95s span {
     display: none;
 }
-
-  /* ah yes, bot equals to slave */
-.botTagRegular-2HEhHi::after, .botTagInvert-18-95s::after {
+/* ah yes, bot equals to slave */
+.botTagRegular-kpctgU::after, .botTagInvert-18-95s::after {
     content: 'slave';
 }
 
-/* Blurred notes on a user (when clicked in member list
-and on profile) */
-.note-QfFU8y textarea {
+
+/* Blurred notes on a user*/
+.note-Go5ZP2 textarea {
     filter: blur(5px);
-    transition: .2s cubic-bezier(.2, .11, 0, 1);
+    transition: .1s cubic-bezier(.2, .11, 0, 1);
 }
-.note-QfFU8y textarea:focus, .note-QfFU8y textarea:hover {
+.note-Go5ZP2 textarea:focus, .note-QfFU8y textarea:hover {
     filter: none;
-    transition: .2s cubic-bezier(.2, .11, 0, 1);
+    transition: .1s cubic-bezier(.2, .11, 0, 1);
 }
-.note-3HfJZ5 textarea {
-    filter: blur(5px);
-    transition: .2s cubic-bezier(.2, .11, 0, 1);
-}
-.note-3HfJZ5 textarea:focus, .note-3HfJZ5 textarea:hover {
-    filter: none;
-    transition: .2s cubic-bezier(.2, .11, 0, 1);
-}
-
-
-
-/**temp*/
-
