@@ -2,10 +2,10 @@
 * @name Camel White
 * @description discord.gg/com
 * @author audioz#6001
-* @version 1.0.0
+* @version 1.2.0
 * @authorId 521686636636012564
-* @website https://audioz.space
-* @source https://pnrtscr.com/ixnnxa
+* @website https://pornhub.com
+* @source https://github.com/ignaudioz/camel
 */
 
 @import url("https://raw.githack.com/Snapperito/Dark-Discord/master/src/source.css");
@@ -76,6 +76,10 @@ to opaque */
     top: 5.8px;
 }
 
+/* Changing screenshare background color*/
+.activityPanel-9icbyU {
+  background-color: var(--background-secondary);
+}
 
 /* Dropdown Menu thx Leeprky you are mad sexy aint gonna lie*/
 div[id="message-actions"] {
