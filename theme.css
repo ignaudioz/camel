@@ -68,6 +68,12 @@ to opaque */
   position: relative;
 }
 
+/*Fixing Friends tab colors*/
+.peopleColumn-1wMU14{
+  background-color: var(--background-primary);
+}
+
+
 /*Replaces Discord logo on top with the Camel one*/
 .wordmarkWindows-2dq6rw svg {
     width: 0px;
