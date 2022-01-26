@@ -8,10 +8,6 @@
 * @source https://github.com/ignaudioz/camel
 */
 
-@import url("https://raw.githack.com/Snapperito/Dark-Discord/master/src/source.css");
-@import url("https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css");
-@import url("https://mulverinex.github.io/legacy-settings-icons/dist-native.css");
-
 .theme-dark,
 .theme-light,
 :root {
