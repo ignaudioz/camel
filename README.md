@@ -1,5 +1,5 @@
 # camel
-a simple theme that was made for discord that's nice on your eyes.
+a simple theme that was made for discord.
 it's somewhat based on the midnight powercord theme
 
 ## installation
